@@ -1,4 +1,4 @@
-# 07-ingress-gateway — Ingress / Gateway
+# 07-ingress-and-gateway-api — Ingress / Gateway API
 
 Ingress controllers y Gateway API implementations para enrutar tráfico externo hacia servicios del cluster.
 
@@ -13,3 +13,7 @@ Ingress controllers y Gateway API implementations para enrutar tráfico externo 
 - [Kubernetes Gateway API](./07-gateway-api/README.md) — API spec / CRD · Not CNCF (k8s SIG) · Estable
 - [Cilium Gateway API](./08-cilium-gateway-api/README.md) — Gateway implementation / eBPF · CNCF Graduated · Estable
 - [Envoy Gateway](./09-envoy-gateway/README.md) — Gateway API implementation · CNCF Incubating · Estable
+
+---
+
+> **Nota:** Kong también aparece en [`32-api-gateways-and-management/`](../32-api-gateways-and-management/README.md) — acá vive como Ingress Controller, allá como API Gateway standalone con features de management.

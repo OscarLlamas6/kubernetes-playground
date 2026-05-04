@@ -1,6 +1,6 @@
 # k8s-playground
 
-Laboratorio práctico para explorar el ecosistema completo de Kubernetes y cloud-native (~180 herramientas en 32 categorías).
+Laboratorio práctico para explorar el ecosistema completo de Kubernetes y cloud-native (~187 herramientas en 32 categorías).
 
 Las herramientas están alineadas con el [CNCF Landscape](https://landscape.cncf.io/) y con los proyectos vigentes a 2026.
 Cada subcarpeta incluye un README con contexto, una carpeta `manifests/`, `examples/` y `notes/` para ir construyendo el laboratorio paso a paso.
@@ -17,7 +17,7 @@ Cada subcarpeta incluye un README con contexto, una carpeta `manifests/`, `examp
 | 04 | [04-ci-cd](./04-ci-cd/README.md) — **CI/CD** | Pipelines de integración y entrega continua nativos de Kubernetes |
 | 05 | [05-service-mesh](./05-service-mesh/README.md) — **Service Mesh** | Mallas de servicios para tráfico mTLS, observabilidad L7 y políticas entre microservicios |
 | 06 | [06-networking-cni](./06-networking-cni/README.md) — **Networking / CNI** | Plugins CNI que implementan la red del cluster: Cilium, Calico, Flannel y más |
-| 07 | [07-ingress-gateway](./07-ingress-gateway/README.md) — **Ingress / Gateway** | Controladores de Ingress y Gateway API para exponer servicios al exterior |
+| 07 | [07-ingress-and-gateway-api](./07-ingress-and-gateway-api/README.md) — **Ingress / Gateway API** | Controladores de Ingress y Gateway API para exponer servicios al exterior |
 | 08 | [08-load-balancers](./08-load-balancers/README.md) — **Load Balancers** | Load balancers para clusters on-prem: MetalLB, kube-vip y alternativas |
 | 09 | [09-secrets](./09-secrets/README.md) — **Secrets Management** | Gestión segura de secretos: desde Sealed Secrets hasta Vault y External Secrets Operator |
 | 10 | [10-policy-security](./10-policy-security/README.md) — **Policy & Security** | Motores de políticas y admission control: OPA Gatekeeper, Kyverno y más |
@@ -42,7 +42,7 @@ Cada subcarpeta incluye un README con contexto, una carpeta `manifests/`, `examp
 | 29 | [29-edge-iot](./29-edge-iot/README.md) — **Edge / IoT** | Kubernetes en el edge y dispositivos IoT: KubeEdge, OpenYurt, Akri y k3s |
 | 30 | [30-platform-engineering](./30-platform-engineering/README.md) — **Platform Engineering** | IDP y plataformas internas de desarrollo: Backstage, Crossplane, Port y Kratix |
 | 31 | [31-runtime-alternatives](./31-runtime-alternatives/README.md) — **Runtime Alternatives** | Runtimes alternativos: containerd, CRI-O, gVisor, Kata Containers, Wasm y más |
-| 32 | [32-api-management](./32-api-management/README.md) — **API Management** | Gestión de APIs sobre Kubernetes: Kong, Tyk, Gravitee y más |
+| 32 | [32-api-gateways-and-management](./32-api-gateways-and-management/README.md) — **API Gateways & Management** | API gateways puros y plataformas de management: Kong, APISIX, Tyk, Gravitee y más |
 
 ---
 
@@ -65,7 +65,7 @@ Cada subcarpeta incluye un README con contexto, una carpeta `manifests/`, `examp
 
 3. **Networking** (se puede ir en paralelo con seguridad):
    - `06-networking-cni` → Cilium
-   - `07-ingress-gateway` → Gateway API + Cilium o NGINX
+   - `07-ingress-and-gateway-api` → Gateway API + Cilium o NGINX
    - `05-service-mesh` → Istio o Linkerd
    - `08-load-balancers` → MetalLB (si es on-prem)
 
@@ -165,7 +165,7 @@ Cada subcarpeta incluye un README con contexto, una carpeta `manifests/`, `examp
 - [ ] Kube-router
 - [ ] Multus CNI
 
-### 07-ingress-gateway — Ingress / Gateway
+### 07-ingress-and-gateway-api — Ingress / Gateway API
 
 - [ ] NGINX Ingress Controller
 - [ ] Traefik
@@ -389,13 +389,20 @@ Cada subcarpeta incluye un README con contexto, una carpeta `manifests/`, `examp
 - [ ] SpinKube
 - [ ] Krustlet (legacy)
 
-### 32-api-management — API Management
+### 32-api-gateways-and-management — API Gateways & Management
 
 - [ ] Kong Gateway
+- [ ] Apache APISIX
+- [ ] Envoy (Standalone)
+- [ ] KrakenD
+- [ ] Gloo Gateway
 - [ ] Tyk
 - [ ] Apigee (Google)
 - [ ] Gravitee
 - [ ] 3scale (Red Hat)
+- [ ] Zuul (legacy)
+- [ ] Pomerium
+- [ ] ngrok Kubernetes Operator
 
 ---
 
